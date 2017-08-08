@@ -1,0 +1,7 @@
+header, nav, section, article, aside, footer, hgroup { 
+       display: block;
+}
+
+canvas {
+    -ms-touch-action: double-tap-zoom;
+}

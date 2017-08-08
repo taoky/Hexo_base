@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="zh-CN"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="zh-CN"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="zh-CN"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ page.title }}</title>
+<meta name="author" content="taoky" >
+<link href='{{ ASSET_PATH }}/css/style.css' rel="stylesheet" media="all">
+<link href='/ie.css' rel="stylesheet" media="all">
+<link href="http://feeds.feedburner.com/{{ site.author.feedbaname }}" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
+<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.0.6-development-only.js"></script>
+<script src="/jq.js"></script>
+<link rel="apple-touch-icon" href="57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="114.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="144.png" />
+</head>
+<body>
+
+<div id="page" class="hentry">
+<!--[if lt IE 8]>
+    <div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center;
+    clear: both; height: 75px; position: relative;'>
+    <div style='position: absolute; right: 3px; top: 3px; font-family: courier new;
+    font-weight: bold;'><a href='#'
+    onclick='javascript:this.parentNode.parentNode.style.display="none"; return
+    false;'><img src='/images/cancel.jpg' style='border: none;'
+    alt='关闭提示'/></a></div>
+    <div style='width: 640px; margin: 0 auto; text-align: left; padding: 0;
+    overflow: hidden; color: black;'>
+    <div style='width: 75px; float: left;'></div>
+    <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
+    <div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>嗯……不要再用 IE 6 / 7
+    了！</div>
+    <div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>本博客不兼容 IE
+    6 / 7。更换或更新您的浏览器，以取得更好的体验，更高的安全性。</div>
+    </div>
+    <div style='width: 75px; float: left;'><a href='http://www.firefox.com'
+    target='_blank'><img src='/images/firefox.png' style='border: none;'
+    width="56" height="56" alt='火狐浏览器'/></a></div>
+    <div style='width: 75px; float: left;'><a
+    href='http://www.browserforthebetter.com/download.html' target='_blank'><img
+    src='/images/ie8.png' style='border: none;' width="56" height="56" alt='升级到 IE 8'/></a></div>
+    <div style='float: left;'><a href='http://www.google.com/chrome'
+    target='_blank'><img src='/images/google-chrome.png' width="56" height="56" style='border: none;'
+    alt='谷歌浏览器'/></a></div>
+    </div>
+    </div>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script>
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('section');
+        document.createElement('article');
+        document.createElement('aside');
+        document.createElement('footer');
+        document.createElement('hgroup');
+    </script>
+<![endif]-->
+
+    <header class="the-header">
+        <div class="unit-head">
+            <div class="unit-inner unit-head-inner">
+                <p class="logo"><a href="{{ HOME_PATH }}">{{ site.title }}</a></p>
+                <nav class="nav-global">
+                    <ul>
+                        <li class="archive"><a href="/archive.html">博文</a></li>
+                        <li class="page"><a href="/pages.html">页面</a></li>
+                        <li class="category"><a
+                            href="/categories.html">分类</a></li>
+                        <li class="tag"><a href="/tags.html">标签</a></li>
+
+                    </ul>
+                </nav>
+            </div><!-- unit-inner -->
+        </div><!-- unit-head -->
+    </header>
+    <div class="body" role="main">
+        <div class="unit-body">
+            <div class="unit-inner unit-body-inner">
+                <div class="entry-content">
+                    {{ content }}
+                </div>
+            </div><!-- unit-inner -->
+        </div><!-- unit-body -->
+    </div><!-- body -->
+    <footer class="the-footer">
+        <div class="unit-foot">
+            <div class="unit-inner unit-foot-inner">
+                <div class="misc vcard">
+                    <h4>about</h4>
+                    <ul>
+                        <li class="github"><a href="http://github.com/taoky/"
+                            rel="me">github.com/{{ site.author.github }}</a></li>
+                        <li class="rss"><a href="/rss.xml">RSS</a></li>
+                        <li><a href="https://medium.com/@TaoKY">English in Medium</a></li>
+                    </ul>
+                </div><!-- misc -->
+                <p class="licence">
+                主题: the_minimum
+                Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+                </p>
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/"><img alt="知识共享许可协议" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/cn/88x31.png" /></a><br/>在未特殊说明情况下，本站点除转载外的所有文章均采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/">知识共享署名-非商业性使用-相同方式共享3.0 中国大陆许可协议</a>进行许可。
+            </div><!-- unit-foot-inner -->
+        </div><!-- unit-foot -->
+    </footer>
+</div><!-- page -->
+<script>
+if ( $.browser.webkit ) {
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+}
+</script>
+
+</body>
+</html>

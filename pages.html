@@ -1,0 +1,17 @@
+---
+layout: page
+title: 页面
+header: Pages
+group: navigation
+---
+{% include JB/setup %}
+<h2>项目页面</h2>
+<ul>
+	<li><a href="/Class/index.htm">班级网页</li>
+	<li><a href="/class-9/index.html">班级网页第二版</li>
+</ul>
+<h2>网站中的所有页面</h2>
+<ul>
+{% assign pages_list = site.pages %}
+{% include JB/pages_list %}
+</ul>
