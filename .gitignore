@@ -1,0 +1,5 @@
+/_site
+.directory
+.DS_Store
+*.swp
+public/*
