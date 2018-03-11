@@ -6,9 +6,15 @@ comments: false
 
 Howdy!
 
-```bash
+```
 $ whoami
 - A student @ USTC (Since 2017/09)
 - Loves computer science, music, and ...?
 - Well, I don't like self-introduction.
 ```
+
+---
+
+友链：
+
+- 舍友 @iBug: [https://ibug.github.io/]()
