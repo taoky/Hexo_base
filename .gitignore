@@ -1,5 +1,8 @@
-/_site
-.directory
 .DS_Store
-*.swp
-public/*
+Thumbs.db
+db.json
+debug.log
+node_modules/
+public/
+.deploy/
+themes/
