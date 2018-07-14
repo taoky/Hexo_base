@@ -1,0 +1,24 @@
+sudo: false
+language: node_js
+node_js: 8
+
+git:
+  depth: 1
+
+install:
+  - npm i -g hexo
+  - npm i -f
+
+before_script:
+  - export PATH="$(npm bin):$PATH"
+
+script:
+  - hexo g
+
+after_success:
+  - bash .travis/deploy.sh
+
+cache:
+  directories:
+    - "node_modules"
+
