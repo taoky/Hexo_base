@@ -17,4 +17,4 @@ $ whoami
 
 友链：
 
-- 舍友 @iBug: [https://ibug.github.io/]()
+- 舍友 @iBug: [https://ibug.github.io/](https://ibug.github.io)
