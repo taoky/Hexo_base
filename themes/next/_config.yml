@@ -130,6 +130,7 @@ menu:
   tags: /tags/ || tags
   projects: /projects/ || file-archive-o
   rss: atom.xml || rss
+  tasterisk: /TAsterisk/ || asterisk
 
 # Enable/Disable menu icons / item badges.
 menu_settings:
@@ -443,7 +444,7 @@ math:
 
 # Han Support
 # Dependencies: https://github.com/theme-next/theme-next-han
-han: true
+han: false
 
 # Pangu Support
 # Dependencies: https://github.com/theme-next/theme-next-pangu
